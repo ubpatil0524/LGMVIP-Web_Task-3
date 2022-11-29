@@ -6,7 +6,6 @@ const generateNewCard = (formData) =>
   <div class="card mb-3" style="max-width: 540px;">
     <div class="row g-2">
       <div class="col-md-4 p-4" style="height:100%;">
-        <img src="${formData.imageUrl}" onerror="this.src='img_101.png'" class="img-fluid rounded-start" alt="...">
       </div>
       <div class="col-md-8">
         <div class="card-header">
@@ -75,7 +74,7 @@ const saveChanges = () => {
   // }
   const formData = {
     id: `${Date.now()}`,
-    imageUrl: document.getElementById("image__url").value,
+    
     fname: document.getElementById("f__name").value,
     email: document.getElementById("e__mail").value,
     gender: document.querySelector('input[name="gender"]:checked').value,
